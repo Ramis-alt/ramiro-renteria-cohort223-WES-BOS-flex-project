@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sunset in Five Languages</title>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="flex-panels.css">
+</head>
+<body>
+  <div class="panels" id="bigdog">
+    <div class="panel panel1">
+      <p>Venice, Italy</p>
+      <p onclick="play('audio1')" class="colorchange">Tramonto</p>
+      <audio id="audio1" src="/audio/Italian.mp3"></audio>
+      <p>Italian</p>
+    </div>
+    <div class="panel panel2">
+      <p>Tulum, Mexico</p>
+      <p onclick="play('audio2')" class="colorchange">Atardecer</p>
+      <audio id="audio2" src="/audio/Spanish.mp3"></audio>
+      <p>Spanish</p>
+    </div>
+    <div class="panel panel3">
+      <p>Paris, France</p>
+      <p onclick="play('audio3')" class="colorchange">Coucher du soleil</p>
+      <audio id="audio3" src="/audio/French.mp3"></audio>
+      <p>French</p>
+    </div>
+    <div class="panel panel4">
+      <p>Itsukushima, Japan</p>
+      <p onclick="play('audio4')" class="colorchange">日没 - Nichibotsu</p>
+      <audio id="audio4" src="/audio/Japanese.mp3"></audio>
+      <p>Japanese</p>
+    </div>
+    <div class="panel panel5">
+      <p>San Francisco, USA</p>
+      <p onclick="play('audio5')" class="colorchange">Sunset</p> 
+      <audio id="audio5" src="/audio/English.mp3"></audio> <!--this was being played because of the callstack order?-->
+      <p>English</p> 
+    </div>
+  </div>
+
+  <script src="flex-panels.js"></script>
+
+</body>
+</html>
+
+<!-- remove the id="audio5" src="/audio/English.mp3" from each and place the 
+<audio> tag and the src below before the js script tag 
+  
