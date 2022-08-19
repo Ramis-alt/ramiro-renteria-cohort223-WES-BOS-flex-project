@@ -75,7 +75,7 @@ html {
   }
 
   .panel.open {
-    flex: 5;
+    flex: 5; /* when its open, it'll take five times the amount of extra room as the other ones*/
     font-size: 40px;
   }
   

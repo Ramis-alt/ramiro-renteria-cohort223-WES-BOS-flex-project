@@ -15,20 +15,6 @@ function toggleActive(e) {
 panels.forEach(panel => panel.addEventListener('click', toggleOpen));
 panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
 
-
-
-let theParent = document.querySelector("#bigdog");
-theParent.addEventListener("click", doSomething,);
-
-function doSomething(e) { //the event argument e determines what event was clicked on
-  if (e.target !== e.currentTarget) {
-    let clickedItem = e.target.id
-  }
-  e.stopPropagation(); //prevent the event from spilling over to to other elements
-}
-
-
-
 function play(audioID) {
   let soundFive = document.getElementById(audioID);
   soundFive.play();
